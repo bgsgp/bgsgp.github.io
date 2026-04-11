@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丐帮集团™ · 官方网站</title>
+
+<link rel="icon" href="music.jpg">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+}
+
+/* 顶栏 */
+header {
+    background: #161b22;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #c9d1d9;
+}
+
+.nav a:hover {
+    color: #58a6ff;
+}
+
+/* 主区 */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #238636;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #2ea043;
+}
+
+/* 项目区 */
+.section {
+    padding: 40px 60px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid #58a6ff;
+    padding-left: 10px;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.repo {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    transition: 0.2s;
+}
+
+.repo:hover {
+    border-color: #58a6ff;
+    transform: translateY(-4px);
+}
+
+.repo h3 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.repo p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* 底部 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #30363d;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">丐帮集团™</div>
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#projects">项目</a>
+        <a href="https://github.com/Beggars-Group">GitHub</a>
+    </div>
+</header>
+
+<div class="hero">
+    <h1>丐帮集团 · Beggars Group</h1>
+    <p>技术 · 游戏 · 自动化 · AI研究体系</p>
+
+    <a class="btn" href="https://github.com/Beggars-Group">查看组织</a>
+</div>
+
+<div class="section" id="projects">
+    <h2>核心项目</h2>
+
+    <div class="repo-grid">
+
+        <div class="repo">
+            <h3>物理版象棋</h3>
+            <p>融合物理机制与策略系统的创新象棋玩法。</p>
+        </div>
+
+        <div class="repo">
+            <h3>绩律·天衡</h3>
+            <p>数据计算与规则评估系统（原 yhs 项目）。</p>
+        </div>
+
+        <div class="repo">
+            <h3>乞分君</h3>
+            <p>Excel自动计分与记录工具。</p>
+        </div>
+
+        <div class="repo">
+            <h3>MusicAutoPlayer</h3>
+            <p>自动音乐播放与数据展示系统。</p>
+        </div>
+
+        <div class="repo">
+            <h3>丐点名</h3>
+            <p>启动器 + 点名系统 UI 框架。</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>组织结构</h2>
+    <p>
+        丐帮集团第一院 · 物理版象棋开发与研究院<br>
+        权限体系：NT（最高权限） / SSS（次高级权限）<br>
+        AI体系：Zero 系列（星睿-Cortex / 晴光-Synapse 等）
+    </p>
+</div>
+
+<div class="footer">
+    © 2019 - <span id="year"></span> 丐帮集团™
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
