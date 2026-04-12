@@ -5,22 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>丐帮集团™ · 官方网站</title>
 
-<link rel="icon" href="music.jpg">
+<link rel="icon" href="https://bggp.dpdns.org/xljh.ico">
 
 <style>
+/* ===== 基础 GitHub 风 + 你的视觉变量融合 ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
 }
 
 body {
-    font-family: "Microsoft YaHei", sans-serif;
     background: #0d1117;
     color: #c9d1d9;
 }
 
-/* 顶栏 */
+/* ===== 顶栏 ===== */
 header {
     background: #161b22;
     padding: 15px 30px;
@@ -33,7 +34,7 @@ header {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #58a6ff;
+    color: #39C5BB;
 }
 
 .nav a {
@@ -43,10 +44,10 @@ header {
 }
 
 .nav a:hover {
-    color: #58a6ff;
+    color: #39C5BB;
 }
 
-/* 主区 */
+/* ===== Hero ===== */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -55,6 +56,9 @@ header {
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    background: linear-gradient(45deg, #e76f51, #39C5BB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -75,14 +79,14 @@ header {
     background: #2ea043;
 }
 
-/* 项目区 */
+/* ===== 项目区（融合你原卡片系统） ===== */
 .section {
     padding: 40px 60px;
 }
 
 .section h2 {
     margin-bottom: 20px;
-    border-left: 4px solid #58a6ff;
+    border-left: 4px solid #39C5BB;
     padding-left: 10px;
 }
 
@@ -95,18 +99,18 @@ header {
 .repo {
     background: #161b22;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #30363d;
     transition: 0.2s;
 }
 
 .repo:hover {
-    border-color: #58a6ff;
+    border-color: #39C5BB;
     transform: translateY(-4px);
 }
 
 .repo h3 {
-    color: #58a6ff;
+    color: #39C5BB;
     margin-bottom: 10px;
 }
 
@@ -115,12 +119,30 @@ header {
     opacity: 0.7;
 }
 
-/* 底部 */
+/* ===== 你的大项目卡片（保留升级版） ===== */
+.project-card {
+    display: block;
+    background: #161b22;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    text-decoration: none;
+    color: #c9d1d9;
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    border-color: #39C5BB;
+    transform: translateY(-5px);
+}
+
+/* ===== 底部 ===== */
 .footer {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #30363d;
     opacity: 0.6;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -137,51 +159,77 @@ header {
 </header>
 
 <div class="hero">
-    <h1>丐帮集团 · Beggars Group</h1>
-    <p>技术 · 游戏 · 自动化 · AI研究体系</p>
-
+    <h1>物理版象棋开发与研究院</h1>
+    <p>丐帮集团第一院 · 棋类 / 工具 / AI / 自动化</p>
     <a class="btn" href="https://github.com/Beggars-Group">查看组织</a>
 </div>
 
+<!-- ===== 核心项目（融合你原来的12个结构） ===== -->
 <div class="section" id="projects">
     <h2>核心项目</h2>
 
     <div class="repo-grid">
 
-        <div class="repo">
+        <a class="repo" href="https://bggp.dpdns.org/1/pce">
             <h3>物理版象棋</h3>
-            <p>融合物理机制与策略系统的创新象棋玩法。</p>
-        </div>
+            <p>已终止维护</p>
+        </a>
 
-        <div class="repo">
-            <h3>绩律·天衡</h3>
-            <p>数据计算与规则评估系统（原 yhs 项目）。</p>
-        </div>
+        <a class="repo" href="https://bggp.dpdns.org/1/pce2">
+            <h3>物理版象棋2</h3>
+            <p>时空回忆之旅</p>
+        </a>
 
-        <div class="repo">
-            <h3>乞分君</h3>
-            <p>Excel自动计分与记录工具。</p>
-        </div>
+        <a class="repo" href="https://bggp.dpdns.org/1/pce3">
+            <h3>物理版象棋3</h3>
+            <p>非物理象棋（在线）</p>
+        </a>
 
-        <div class="repo">
-            <h3>MusicAutoPlayer</h3>
-            <p>自动音乐播放与数据展示系统。</p>
-        </div>
+        <a class="repo" href="https://bggp.dpdns.org/1/hbce/">
+            <h3>杂交斗兽棋</h3>
+            <p>创新棋类系统</p>
+        </a>
 
-        <div class="repo">
+        <a class="repo" href="https://bggp.dpdns.org/1/bgrd/">
             <h3>丐点名</h3>
-            <p>启动器 + 点名系统 UI 框架。</p>
-        </div>
+            <p>点名 / 启动器系统</p>
+        </a>
+
+        <a class="repo" href="https://bggp.dpdns.org/1/music">
+            <h3>音乐网站</h3>
+            <p>音乐播放平台</p>
+        </a>
+
+        <a class="repo" href="https://bggp.dpdns.org/1/2048">
+            <h3>2048</h3>
+            <p>经典小游戏</p>
+        </a>
+
+        <a class="repo" href="https://beggars-group.github.io/bal/">
+            <h3>绩律·天衡</h3>
+            <p>规则计算系统</p>
+        </a>
+
+        <a class="repo" href="https://beggars-group.github.io/MusicAutoPlayer/">
+            <h3>MusicAutoPlayer</h3>
+            <p>自动音乐播放器</p>
+        </a>
+
+        <a class="repo" href="https://beggars-group.github.io/aria2cdl/">
+            <h3>Aria2c下载器</h3>
+            <p>高速下载系统</p>
+        </a>
 
     </div>
 </div>
 
+<!-- ===== 组织信息 ===== -->
 <div class="section">
     <h2>组织结构</h2>
     <p>
         丐帮集团第一院 · 物理版象棋开发与研究院<br>
         权限体系：NT（最高权限） / SSS（次高级权限）<br>
-        AI体系：Zero 系列（星睿-Cortex / 晴光-Synapse 等）
+        AI体系：Zero 系列（星睿 / 晴光）
     </p>
 </div>
 
@@ -190,7 +238,7 @@ header {
 </div>
 
 <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
